@@ -11,31 +11,6 @@ public class Main {
         int[] hasil = gabung(array1, array2);
         printArray(hasil, "gabung");
 
-        // menambahkan kedua array
-        int[] hasil2 = tambah(array1, array2);
-        printArray(hasil2, "tambah");
-
-        // // reverse array
-        // int[] hasil3 = reverse(array1);
-        // printArray(hasil3, "reverse");
-
-    }
-
-    // private static int[] reverse(int[] array) {
-    // Arrays.sort(array);
-    // int[] array5 = new int[array.length];
-    // for (int i = 0; i < array.length; i++) {
-    // array5[i] = array[((array.length) - 1) - i];
-    // }
-    // return array5;
-    // }
-
-    private static int[] tambah(int[] array1, int[] array2) {
-        int[] array4 = new int[array1.length];
-        for (int i = 0; i < array1.length; i++) {
-            array4[i] = array1[i] + array2[i];
-        }
-        return array4;
     }
 
     private static int[] gabung(int[] array1, int[] array2) {
