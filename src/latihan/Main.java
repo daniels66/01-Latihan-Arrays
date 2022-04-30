@@ -11,6 +11,18 @@ public class Main {
         int[] hasil = gabung(array1, array2);
         printArray(hasil, "gabung");
 
+        // menambahkan kedua array
+        int[] hasil2 = tambah(array1, array2);
+        printArray(hasil2, "tambah");
+
+    }
+
+    private static int[] tambah(int[] array1, int[] array2) {
+        int[] array4 = new int[array1.length];
+        for (int i = 0; i < array1.length; i++) {
+            array4[i] = array1[i] + array2[i];
+        }
+        return array4;
     }
 
     private static int[] gabung(int[] array1, int[] array2) {
